@@ -1,0 +1,14 @@
+.headings {
+    color: white;
+    text-decoration: underline;
+}
+
+#para2 {
+    background-color: cyan;
+}
+
+div {
+    background-color: chocolate;
+    margin: 100px;
+    padding: 10px;
+}

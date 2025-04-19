@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 
 <html>
+    <head>
+        <link rel="stylesheet" href="theme.css">
+    </head>
     <body>
-    <h1>David's Website</h1>
-    <p>
-        This is a paragraph on David's website. We are learning HTML together and we are going to build an awesome website!
-        If you don't believe me, just watch and see! We're doing this because we're bored.
-    </p>
-    <h2>This is h2 heading</h2>
-    <p>
-        This is a paragraph on David's website. We are learning HTML together and we are going to build an awesome website!
-        If you don't believe me, just watch and see! We're doing this because we're bored.
-    </p>
+    <div>
+        <h1 class="headings">David's Website</h1>
+        <p>
+            This is a paragraph on David's website. We are learning HTML together and we are going to build an awesome website!
+            If you don't believe me, just watch and see! We're doing this because we're bored.
+        </p>
+    </div>
+    <div id="para2">
+        <h2 class="headings">This is h2 heading</h2>
+        <p style="font-weight: bolder; font-style: italic;">
+            This is a paragraph on David's website. We are learning HTML together and we are going to build an awesome website!
+            If you don't believe me, just watch and see! We're doing this because we're bored.
+        </p>
+    </div>
     </body>
 </html>
-<script>
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-
-export default function ContainedButtons() {
-return (
-<Stack direction="row" spacing={2}>
-    <Button variant="contained">Do Nothing</Button>
-</Stack>
-);
-}
-</script>
