@@ -1,3 +1,9 @@
+div {
+    background-color: chocolate;
+    margin: 100px;
+    padding: 10px;
+}
+
 .headings {
     color: white;
     text-decoration: underline;
@@ -7,8 +13,9 @@
     background-color: cyan;
 }
 
-div {
-    background-color: chocolate;
-    margin: 100px;
-    padding: 10px;
+#imageSize {
+    width: 100px;
+    border-radius: 10%;
+    border: 1.5px solid #000000;
 }
+
