@@ -3,8 +3,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="theme.css">
+        <script src="myscripts.js"></script>
     </head>
     <body>
+    <div id="textBoxSize">
+        <form onsubmit="submitForm(event)">
+            <label for="nameInput">Name:</label><input type="text" id="nameInput" class="inputinput"/>
+            <span id="missingName" class="missingField">*</span>
+            <br/>
+            <label for="emailInput">Email:</label><input type="email" id="emailInput" class="inputinput"/>
+            <span id="missingEmail" class="missingField">*</span>
+            <br/>
+            <label for="numberInput">Number:</label><input type="text" id="numberInput" class="inputinput"/>
+            <span id="missingNumber" class="missingField">*</span>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <div>
         <h1 class="headings">David's Website</h1>
         <p>
@@ -24,5 +39,6 @@
         </p>
         <img src="pencil.jpg" alt="image2"/>
     </div>
+
     </body>
 </html>

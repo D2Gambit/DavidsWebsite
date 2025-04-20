@@ -19,3 +19,31 @@ div {
     border: 1.5px solid #000000;
 }
 
+#textBoxSize {
+    width : 500px;
+    border: 1.5px solid #000000;
+    margin: auto;
+    background-color: white;
+}
+
+.inputinput {
+    margin: 5px;
+}
+
+.missingField {
+    color: red;
+}
+
+#missingName {
+    display: none;
+}
+
+#missingEmail {
+    display: none;
+}
+
+#missingNumber {
+    display: none;
+}
+
+
