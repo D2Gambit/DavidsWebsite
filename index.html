@@ -6,6 +6,17 @@
         <script src="myscripts.js"></script>
     </head>
     <body>
+    <div id="textBoxSize">
+        <form onsubmit="submitForm(event)">
+            <span> Name:</span> <input type="text" id="nameInput"/>
+            <br/>
+            <span> Email:</span> <input type="email" id="emailInput"/>
+            <br/>
+            <span> Number:</span> <input type="text" id="numberInput"/>
+            <br/>
+            <button onclick="submitForm(event)" type="submit">Submit</button>
+        </form>
+    </div>
     <div>
         <h1 class="headings">David's Website</h1>
         <p>
@@ -25,16 +36,6 @@
         </p>
         <img src="pencil.jpg" alt="image2"/>
     </div>
-    <div id="textBoxSize">
-        <form onsubmit="submitForm()">
-            <span> Name:</span> <input type="text" id="nameInput"/>
-            <br/>
-            <span> Email:</span> <input type="email" id="emailInput"/>
-            <br/>
-            <span> Number:</span> <input type="text" id="numberInput"/>
-            <br/>
-            <button onclick="submitForm()" type="submit">Submit</button>
-        </form>
-    </div>
+
     </body>
 </html>
