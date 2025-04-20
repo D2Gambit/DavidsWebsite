@@ -3,6 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="theme.css">
+        <script src="myscripts.js"></script>
     </head>
     <body>
     <div>
@@ -23,6 +24,17 @@
             If you don't believe me, just watch and see! We're doing this because we're bored.
         </p>
         <img src="pencil.jpg" alt="image2"/>
+    </div>
+    <div id="textBoxSize">
+        <form onsubmit="submitForm()">
+            <span> Name:</span> <input type="text" id="nameInput"/>
+            <br/>
+            <span> Email:</span> <input type="email" id="emailInput"/>
+            <br/>
+            <span> Number:</span> <input type="text" id="numberInput"/>
+            <br/>
+            <button onclick="submitForm()" type="submit">Submit</button>
+        </form>
     </div>
     </body>
 </html>

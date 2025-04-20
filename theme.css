@@ -19,3 +19,8 @@ div {
     border: 1.5px solid #000000;
 }
 
+#textBoxSize {
+    border: 1.5px solid #000000;
+    margin: auto;
+    background-color: white;
+}
