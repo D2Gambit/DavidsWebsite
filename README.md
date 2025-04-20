@@ -53,3 +53,41 @@ By linking to a separate css file `theme.css`, we're able to reference all of ou
 We can reference classes in CSS by using the `.headings` DOT operator. We can reference IDs by using the `#para2`.
 
 Lastly, we learned about padding and margin. Padding spaces out the inside of your box, while margin adds spacing to the outside of your box.
+
+4. Introduction to Javascript and Form Validation
+
+`<script src="myscripts.js"></script>` - references a javascript file that lives somewhere in our directory. We add this to the `<head>` section of our HTML
+
+Next, we added a form that accepts Name, Email, and Phone Number:
+```
+<form onsubmit="submitForm(event)">
+            <label for="nameInput">Name:</label><input type="text" id="nameInput" class="inputinput"/>
+            <span id="missingName" class="missingField">*</span>
+            <br/>
+            <label for="emailInput">Email:</label><input type="email" id="emailInput" class="inputinput"/>
+            <span id="missingEmail" class="missingField">*</span>
+            <br/>
+            <label for="numberInput">Number:</label><input type="text" id="numberInput" class="inputinput"/>
+            <span id="missingNumber" class="missingField">*</span>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+```
+Note: When the form is submitted, it will call a function using the `onsubmit="submitForm(event)"` hook.
+
+We create this function in javascript and it will look something like this:
+```
+function submitForm(event) {
+    var name = document.getDocumentById("nameInput").value;
+    ...
+    if(name === "") {
+        return false;
+    }
+    ...
+    return true;
+}
+```
+
+We additionally added some flavor to the form by showing or hiding a red asterisk when the input is missing or invalid.
+`document.getElementById("missingName").style.display= "inline";` - show asterisk
+`document.getElementById("missingName").style.display= "none";` - hide asterisk once Name field is valid.
