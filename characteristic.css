@@ -64,6 +64,8 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
+    color: var(--text-color) !important;
+    z-index: 1000;
 }
 button{
     border: none;
@@ -95,6 +97,7 @@ ul li::before{
     top: 12px;
     left: 8px;
 }
+
 ul li.checked{
     color: var(--text-color);
     text-decoration: line-through;
